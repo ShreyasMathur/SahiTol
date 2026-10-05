@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(npm install 2>&1)",
+      "PowerShell(npm test 2>&1)",
+      "PowerShell(npm test 2>$null)",
+      "PowerShell(npm run build 2>&1)",
+      "PowerShell(Get-Content node_modules/pdfmake/build/vfs_fonts.js -TotalCount 1 | ForEach-Object { $_.Substring\\(0, [Math]::Min\\(300, $_.Length\\)\\) }; $t = Get-Content node_modules/pdfmake/build/vfs_fonts.js -Raw; $t.Substring\\($t.Length - 400\\); node -e \"const v=require\\('pdfmake/build/vfs_fonts.js'\\); console.log\\(typeof v, Object.keys\\(v\\).slice\\(0,8\\)\\)\"; Get-ChildItem node_modules/pdfmake/src | Select-Object -First 5 Name; node -e \"console.log\\(require.resolve\\('pdfmake'\\)\\)\")",
+      "PowerShell(Remove-Item -LiteralPath \"C:\\\\Users\\\\shrey\\\\Documents\\\\SIH\\\\server\\\\src\\\\users.js\" -Confirm:$false)"
+    ]
+  }
+}

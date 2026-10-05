@@ -1,0 +1,23 @@
+{
+  "name": "@nawi/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node --watch --disable-warning=ExperimentalWarning src/index.js",
+    "start": "node --disable-warning=ExperimentalWarning src/index.js"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "@nawi/shared": "0.1.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "docx": "^9.8.0",
+    "express": "^4.21.2",
+    "pdfmake": "^0.2.23",
+    "qrcode": "^1.5.4"
+  }
+}
